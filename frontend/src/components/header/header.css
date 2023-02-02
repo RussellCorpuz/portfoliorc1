@@ -36,12 +36,6 @@ header {
     background: var(--color-primary);
 }
 
-.me {
-/*    width: 20rem;*/
-/*    position: absolute;*/
-/*    left: calc(50% - 11rem);*/
-    margin-top: 4rem;
-}
 
 .scroll__down {
     position: absolute;
@@ -52,11 +46,20 @@ header {
     font-size: 2vh;
 }
 
-.photo {
+/*.photo {
     border-radius: 6rem 0 6rem 0;
     position: absolute;
     width: 20rem;
     left: calc(50% - 9.96rem);background: rgba( 0, 0, 0, 0.25 );
+}*/
+
+.me {
+    width: 50vh;
+    border-radius: 6rem 0 6rem 0;
+    overflow: hidden;
+    display: block;
+    margin: auto;
+    margin-top: 5vh;
 }
 
 @media screen and (max-width: 1024px) {
@@ -64,11 +67,19 @@ header {
         height: 68vh;
     }
 
+    .me {
+        width: 30vh;
+    }
+
 }
 
 @media screen and (max-width: 600px) {
     header {
         height: 100vh;
+    }
+
+    .me {
+        width: auto;
     }
 
     .header__socials, .scroll__down {
