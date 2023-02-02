@@ -11,9 +11,9 @@
 }
 
 :root {
-    --color-bg: rgb(186, 87, 44);
-    --color-bg-variant: rgb(181, 112, 67);
-    --color-primary: rgb(215, 152, 97);
+    --color-bg: rgb(162, 76, 40);
+    --color-bg-variant: rgb(181, 113, 67);
+    --color-primary: rgb(93, 88, 152);
     --color-primary-variant: rgb(255, 153, 0);
     --color-white: white;
     --color-ligth: rgb(219, 183, 144);
@@ -39,6 +39,10 @@ body {
     color: var(--color-white);
     line-height: 1.7;
     background-image: url(./assets/bg.jpg);
+    background-attachment: fixed;
+    background-position: 50% 25%;
+    background-size: 1471px;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -56,6 +60,8 @@ h1 {
 
 section {
     margin-top: 8rem;
+    height: 100vh;
+    padding-top: 3rem;
 }
 
 section > h2, section h5 {
