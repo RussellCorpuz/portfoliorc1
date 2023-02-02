@@ -11,7 +11,7 @@
 }
 
 :root {
-    --color-bg: rgb(162, 76, 40);
+    --color-bg: rgb(255, 197, 126);
     --color-bg-variant: rgb(181, 113, 67);
     --color-primary: rgb(93, 88, 152);
     --color-primary-variant: rgb(255, 153, 0);
@@ -41,7 +41,7 @@ body {
     background-image: url(./assets/bg.jpg);
     background-attachment: fixed;
     background-position: 50% 25%;
-    background-size: 1471px;
+    background-size: 2200px;
     background-repeat: no-repeat;
 }
 
@@ -59,7 +59,7 @@ h1 {
 }
 
 section {
-    margin-top: 8rem;
+    margin-top: 0;
     height: 100vh;
     padding-top: 3rem;
 }
