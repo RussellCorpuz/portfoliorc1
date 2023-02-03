@@ -2,6 +2,15 @@ import React from 'react'
 import './testimonials.css'
 import CL from '../../assets/u1.jpg'
 
+// import Swiper core and required modules
+import { Pagination } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+
 const Testimonials = () => {
   return (
     <section id='testimonials'>
@@ -10,9 +19,14 @@ const Testimonials = () => {
       <h5>Review from Clients</h5>
       <h2>Testimonials</h2>
 
-      <div className="container testimonials__container">
+      <Swiper className="container testimonials__container" 
+            // install Swiper modules
+            modules={[Pagination]}
+            spaceBetween={40}
+            slidesPerView={1}
+            pagination={{ clickable: true }} >
 
-        <article className='testimonial'>
+        <SwiperSlide className='testimonial'>
           <div>
           <div className="client__avatar" >
               <img src={CL} alt="client1" />
@@ -22,9 +36,9 @@ const Testimonials = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, explicabo? Blanditiis, similique harum repudiandae beatae eos labore perspiciatis rerum cupiditate autem? Hic suscipit culpa autem harum, praesentium at sequi eos.
             </small>
           </div>
-        </article>
+        </SwiperSlide>
 
-        <article className='testimonial'>
+        <SwiperSlide className='testimonial'>
           <div>
           <div className="client__avatar" >
               <img src={CL} alt="client1" />
@@ -34,9 +48,9 @@ const Testimonials = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, explicabo? Blanditiis, similique harum repudiandae beatae eos labore perspiciatis rerum cupiditate autem? Hic suscipit culpa autem harum, praesentium at sequi eos.
             </small>
           </div>
-        </article>
+        </SwiperSlide>
 
-        <article className='testimonial'>
+        <SwiperSlide className='testimonial'>
           <div>
           <div className="client__avatar" >
               <img src={CL} alt="client1" />
@@ -46,9 +60,9 @@ const Testimonials = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum, explicabo? Blanditiis, similique harum repudiandae beatae eos labore perspiciatis rerum cupiditate autem? Hic suscipit culpa autem harum, praesentium at sequi eos.
             </small>
           </div>
-        </article>
-        
-      </div>
+        </SwiperSlide>
+
+      </Swiper>
 
     </section>
   )
