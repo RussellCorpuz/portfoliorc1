@@ -10,6 +10,7 @@ import Portfolio from './components/portfolio/Portfolio'
 import Testimonials from './components/testimonials/Testimonials'
 import Contact from './components/contact/Contact'
 import Footer from './components/footer/Footer'
+import Swiper from './components/swiperport/Swiperport'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -22,7 +23,7 @@ function App() {
         <About />
         <Experience />
         <Services />
-        <Portfolio />
+        <Swiper />
         <Testimonials />
         <Contact />
         <Footer />
